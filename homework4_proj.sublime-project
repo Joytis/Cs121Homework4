@@ -102,6 +102,40 @@
 				}
 			],
 			"working_dir": "${project_path}/build"
+		},
+		{
+			"file_regex": "(.+[^:]):(\\d+):(\\d+): (?:fatal )?((?:error|warning): .+)$",
+			"name": "homework4_proj (OSX)",
+			"shell_cmd": "make -j4",
+			"syntax": "Packages/CMakeBuilder/Syntax/Make.sublime-syntax",
+			"variants":
+			[
+				{
+					"name": "clean",
+					"shell_cmd": "make -j4 clean"
+				},
+				{
+					"name": "rebuild_cache",
+					"shell_cmd": "make -j4 rebuild_cache"
+				},
+				{
+					"name": "program1",
+					"shell_cmd": "make -j4 program1"
+				},
+				{
+					"name": "program2",
+					"shell_cmd": "make -j4 program2"
+				},
+				{
+					"name": "program3",
+					"shell_cmd": "make -j4 program3"
+				},
+				{
+					"name": "program4",
+					"shell_cmd": "make -j4 program4"
+				}
+			],
+			"working_dir": "${project_path}/build"
 		}
 	],
 	"folders":
